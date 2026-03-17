@@ -25,7 +25,7 @@
   .cart-btn:hover { background: var(--deep-amber); color: white; }
 
   .hero { position: relative; height: 45vh; overflow: hidden; display: flex; align-items: center; }
-  .hero-bg { position: absolute; inset: 0; background-image: url('images/Классика/Обложка.jpg'); background-size: cover; background-position: center; background-color: #2A1F15; }
+  .hero-bg { position: absolute; inset: 0; background-image: url('images/Классика/Обложка.jpg'); background-size: cover; background-position: center; background-color: #2A1F15; filter: blur(6px); transform: scale(1.05); }
   .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(28,22,18,0.78) 0%, rgba(28,22,18,0.35) 60%, rgba(28,22,18,0.1) 100%); }
   .hero-content { position: relative; z-index: 2; padding: 0 4rem; }
   .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
@@ -188,7 +188,7 @@
 <section class="contact-section" id="contact">
   <h2>Свяжитесь с нами</h2>
   <p>По всем вопросам заказа и сотрудничества пишите нам — ответим быстро!</p>
-  <a class="contact-email" href="mailto:rutasha2809@gmail.com">rutasha2809@gmail.com</a>
+  <a class="contact-email" href="/cdn-cgi/l/email-protection#087a7d7c697b60693a303831486f65696164266b6765"><span class="__cf_email__" data-cfemail="592b2c2d382a31386b616960193e34383035773a3634">[email&#160;protected]</span></a>
 </section>
 
 <footer>
@@ -215,7 +215,7 @@
       <li><a href="#">ВКонтакте</a></li>
       <li><a href="#">Telegram</a></li>
       <li><a href="#">WhatsApp</a></li>
-      <li><a href="mailto:rutasha2809@gmail.com">rutasha2809@gmail.com</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#7c0e09081d0f141d4e444c453c1b111d1510521f1311"><span class="__cf_email__" data-cfemail="eb999e9f8a98838ad9d3dbd2ab8c868a8287c5888486">[email&#160;protected]</span></a></li>
     </ul>
   </div>
 </footer>
@@ -224,7 +224,7 @@
   <p>Политика конфиденциальности · Оферта</p>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const CATALOGUE = [
   {
     name: 'Анималистика',
@@ -314,6 +314,11 @@ function nameFromPath(p) {
   return p.split('/').pop().replace(/\.[^.]+$/, '');
 }
 
+function encodePath(path) {
+  // Encode each path segment individually, preserving slashes
+  return path.split('/').map(segment => encodeURIComponent(segment)).join('/');
+}
+
 function plural(n) {
   if (n === 1) return 'свеча';
   if (n >= 2 && n <= 4) return 'свечи';
@@ -342,18 +347,19 @@ function closeLightbox() {
 }
 
 function toggleCategory(idx) {
-  const row    = Math.floor(idx / 3);
   const panel  = document.getElementById('panel-' + idx);
   const card   = document.getElementById('card-'  + idx);
   const isOpen = panel.classList.contains('open');
 
-  for (let i = row * 3; i < row * 3 + 3; i++) {
+  // Close ALL panels and cards across every row
+  for (let i = 0; i < CATALOGUE.length; i++) {
     const p = document.getElementById('panel-' + i);
     const c = document.getElementById('card-'  + i);
     if (p) p.classList.remove('open');
     if (c) c.classList.remove('active');
   }
 
+  // If it wasn't open, open it now
   if (!isOpen) {
     panel.classList.add('open');
     card.classList.add('active');
@@ -376,7 +382,7 @@ function build() {
       card.id        = 'card-' + idx;
       card.onclick   = () => toggleCategory(idx);
       card.innerHTML =
-        '<img class="category-thumb" src="' + cat.cover + '" alt="' + cat.name + '" onerror="this.style.opacity=\'.2\'">' +
+        '<img class="category-thumb" src="' + encodePath(cat.cover) + '" alt="' + cat.name + '" onerror="this.style.opacity=\'.2\'">' +
         '<div class="category-info">' +
           '<div>' +
             '<div class="category-name">' + cat.name + '</div>' +
@@ -401,26 +407,13 @@ function build() {
         const name     = nameFromPath(path);
         const safeSrc  = path.replace(/'/g, "\\'");
         const safeName = name.replace(/'/g, "\\'");
-        return '<div class="product-card-sm" onclick="openLightbox(\'' + safeSrc + '\',\'' + safeName + '\')">' +
-          '<div class="product-img-wrap"><img src="' + path + '" alt="' + name + '" onerror="this.parentElement.style.background=\'#e0d4c4\'"></div>' +
+        const encSrc = encodePath(path);
+        const safeEncSrc = encSrc.replace(/'/g, "\\'");
+        return '<div class="product-card-sm" onclick="openLightbox(\'' + safeEncSrc + '\',\'' + safeName + '\')">' +
+          '<div class="product-img-wrap"><img src="' + encSrc + '" alt="' + name + '" onerror="this.parentElement.style.background=\'#e0d4c4\'"></div>' +
           '<div class="product-name-sm">' + name + '</div>' +
           '<div class="product-footer-sm"><button class="add-btn-sm" onclick="event.stopPropagation();addToCart()">В корзину</button></div>' +
         '</div>';
       }).join('');
 
-      panel.innerHTML =
-        '<div class="panel-header">' +
-          '<div class="panel-title">' + cat.name + '</div>' +
-          '<span class="panel-close" onclick="toggleCategory(' + idx + ')">Закрыть ✕</span>' +
-        '</div>' +
-        '<div class="panel-products">' + items + '</div>';
-
-      grid.appendChild(panel);
-    });
-  }
-}
-
-build();
-</script>
-</body>
-</html>
+   
