@@ -31,7 +31,7 @@
   .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
   .hero-title { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; line-height: 1.08; color: var(--cream); margin-bottom: 1.2rem; }
   .hero-title em { font-style: italic; color: var(--gold); }
-  .hero-tagline { font-size: 1rem; color: rgba(245,239,228,0.75); font-style: italic; font-family: 'Cormorant Garamond', serif; margin-bottom: 2.5rem; letter-spacing: 0.04em; }
+  .hero-tagline { font-size: 1rem; color: rgba(245,239,228,0.75); font-style: italic; font-family: 'Cormorant Garamond', serif; margin-bottom: 2rem; letter-spacing: 0.04em; }
   .hero-cta { display: inline-block; background: var(--gold); color: var(--dark); padding: 0.95rem 2.4rem; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; cursor: pointer; border: none; font-family: 'Raleway', sans-serif; transition: opacity 0.2s; }
   .hero-cta:hover { opacity: 0.85; }
 
@@ -115,7 +115,7 @@
 
   @media (max-width: 1100px) { .panel-products { grid-template-columns: repeat(4, 1fr); } }
   @media (max-width: 900px) {
-    .hero-title { font-size: 3rem; } .hero-content { padding: 0 2rem; }
+    .hero-title { font-size: 2.2rem; } .hero-content { padding: 0 2rem; }
     .panel-products { grid-template-columns: repeat(3, 1fr); }
     .features { grid-template-columns: 1fr; }
     footer { grid-template-columns: 1fr 1fr; }
@@ -188,7 +188,7 @@
 <section class="contact-section" id="contact">
   <h2>Свяжитесь с нами</h2>
   <p>По всем вопросам заказа и сотрудничества пишите нам — ответим быстро!</p>
-  <a class="contact-email" href="/cdn-cgi/l/email-protection#087a7d7c697b60693a303831486f65696164266b6765"><span class="__cf_email__" data-cfemail="592b2c2d382a31386b616960193e34383035773a3634">[email&#160;protected]</span></a>
+  <a class="contact-email" href="mailto:rutasha2809@gmail.com">rutasha2809@gmail.com</a>
 </section>
 
 <footer>
@@ -215,7 +215,7 @@
       <li><a href="#">ВКонтакте</a></li>
       <li><a href="#">Telegram</a></li>
       <li><a href="#">WhatsApp</a></li>
-      <li><a href="/cdn-cgi/l/email-protection#7c0e09081d0f141d4e444c453c1b111d1510521f1311"><span class="__cf_email__" data-cfemail="eb999e9f8a98838ad9d3dbd2ab8c868a8287c5888486">[email&#160;protected]</span></a></li>
+      <li><a href="mailto:rutasha2809@gmail.com">rutasha2809@gmail.com</a></li>
     </ul>
   </div>
 </footer>
@@ -224,15 +224,15 @@
   <p>Политика конфиденциальности · Оферта</p>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const CATALOGUE = [
+<script>
+var CATALOGUE = [
   {
     name: 'Анималистика',
     cover: 'images/Анималистика/Обложка.jpg',
     products: [
       'images/Анималистика/Мишки-mini.jpg',
       'images/Анималистика/Мишки.jpg',
-      'images/Анималистика/Собачки.jpg',
+      'images/Анималистика/Собачки.jpg'
     ]
   },
   {
@@ -246,7 +246,7 @@ const CATALOGUE = [
       'images/Интерьер/Свеча бокс.jpg',
       'images/Интерьер/Свеча в стекле.jpg',
       'images/Интерьер/Свеча заливка цветы.jpg',
-      'images/Интерьер/Тыква.jpg',
+      'images/Интерьер/Тыква.jpg'
     ]
   },
   {
@@ -264,7 +264,7 @@ const CATALOGUE = [
       'images/Классика/Свеча 9.jpg',
       'images/Классика/Свеча 10.jpg',
       'images/Классика/Свечи mini.jpg',
-      'images/Классика/Свечи.jpg',
+      'images/Классика/Свечи.jpg'
     ]
   },
   {
@@ -276,7 +276,7 @@ const CATALOGUE = [
       'images/Мэлтсы и саше/Мэлтсы 2.jpg',
       'images/Мэлтсы и саше/Мэлтсы 3.jpg',
       'images/Мэлтсы и саше/Мэлтсы.jpg',
-      'images/Мэлтсы и саше/Саше.jpg',
+      'images/Мэлтсы и саше/Саше.jpg'
     ]
   },
   {
@@ -290,7 +290,7 @@ const CATALOGUE = [
       'images/Пасхальная коллекция/Заяц пасхальный 5.jpg',
       'images/Пасхальная коллекция/Яйца пасхальные гладкие.jpg',
       'images/Пасхальная коллекция/Яйцо пасхальное ажур.jpg',
-      'images/Пасхальная коллекция/Яйцо-свеча заливка.jpg',
+      'images/Пасхальная коллекция/Яйцо-свеча заливка.jpg'
     ]
   },
   {
@@ -305,35 +305,34 @@ const CATALOGUE = [
       'images/Цветы/Пионы.jpg',
       'images/Цветы/Подсвеник роза с заливкой свечи.jpg',
       'images/Цветы/Подсвечник роза.jpg',
-      'images/Цветы/Подсвечник розы.jpg',
+      'images/Цветы/Подсвечник розы.jpg'
     ]
   }
 ];
 
-function nameFromPath(p) {
-  return p.split('/').pop().replace(/\.[^.]+$/, '');
+var cartCount = 0;
+var cartBtn = document.getElementById('cart-btn');
+var notif = document.getElementById('notif');
+
+function addToCart() {
+  cartCount++;
+  cartBtn.textContent = 'Корзина (' + cartCount + ')';
+  notif.classList.add('show');
+  setTimeout(function() { notif.classList.remove('show'); }, 2200);
 }
 
 function encodePath(path) {
-  // Encode each path segment individually, preserving slashes
-  return path.split('/').map(segment => encodeURIComponent(segment)).join('/');
+  return path.split('/').map(function(seg) { return encodeURIComponent(seg); }).join('/');
+}
+
+function nameFromPath(p) {
+  return p.split('/').pop().replace(/\.[^.]+$/, '');
 }
 
 function plural(n) {
   if (n === 1) return 'свеча';
   if (n >= 2 && n <= 4) return 'свечи';
   return 'свечей';
-}
-
-let cartCount = 0;
-const cartBtn = document.getElementById('cart-btn');
-const notif   = document.getElementById('notif');
-
-function addToCart() {
-  cartCount++;
-  cartBtn.textContent = 'Корзина (' + cartCount + ')';
-  notif.classList.add('show');
-  setTimeout(() => notif.classList.remove('show'), 2200);
 }
 
 function openLightbox(src, name) {
@@ -347,40 +346,39 @@ function closeLightbox() {
 }
 
 function toggleCategory(idx) {
-  const panel  = document.getElementById('panel-' + idx);
-  const card   = document.getElementById('card-'  + idx);
-  const isOpen = panel.classList.contains('open');
+  var panel = document.getElementById('panel-' + idx);
+  var card  = document.getElementById('card-'  + idx);
+  var isOpen = panel.classList.contains('open');
 
-  // Close ALL panels and cards across every row
-  for (let i = 0; i < CATALOGUE.length; i++) {
-    const p = document.getElementById('panel-' + i);
-    const c = document.getElementById('card-'  + i);
+  for (var i = 0; i < CATALOGUE.length; i++) {
+    var p = document.getElementById('panel-' + i);
+    var c = document.getElementById('card-'  + i);
     if (p) p.classList.remove('open');
     if (c) c.classList.remove('active');
   }
 
-  // If it wasn't open, open it now
   if (!isOpen) {
     panel.classList.add('open');
     card.classList.add('active');
-    setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+    setTimeout(function() { panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 50);
   }
 }
 
 function build() {
-  const grid        = document.getElementById('cat-grid');
-  const footerLinks = document.getElementById('footer-links');
-  const rows        = Math.ceil(CATALOGUE.length / 3);
+  var grid        = document.getElementById('cat-grid');
+  var footerLinks = document.getElementById('footer-links');
+  var rows        = Math.ceil(CATALOGUE.length / 3);
 
-  for (let row = 0; row < rows; row++) {
-    const slice = CATALOGUE.slice(row * 3, row * 3 + 3);
+  for (var row = 0; row < rows; row++) {
+    var slice = CATALOGUE.slice(row * 3, row * 3 + 3);
 
-    slice.forEach((cat, col) => {
-      const idx  = row * 3 + col;
-      const card = document.createElement('div');
+    for (var col = 0; col < slice.length; col++) {
+      var cat  = slice[col];
+      var idx  = row * 3 + col;
+      var card = document.createElement('div');
       card.className = 'category-card';
       card.id        = 'card-' + idx;
-      card.onclick   = () => toggleCategory(idx);
+      (function(i) { card.onclick = function() { toggleCategory(i); }; })(idx);
       card.innerHTML =
         '<img class="category-thumb" src="' + encodePath(cat.cover) + '" alt="' + cat.name + '" onerror="this.style.opacity=\'.2\'">' +
         '<div class="category-info">' +
@@ -392,28 +390,48 @@ function build() {
         '</div>';
       grid.appendChild(card);
 
-      const li = document.createElement('li');
-      li.innerHTML = '<a href="#catalogue" onclick="toggleCategory(' + idx + ');return false;">' + cat.name + '</a>';
+      var li = document.createElement('li');
+      (function(i, name) {
+        li.innerHTML = '<a href="#catalogue" onclick="toggleCategory(' + i + ');return false;">' + name + '</a>';
+      })(idx, cat.name);
       footerLinks.appendChild(li);
-    });
+    }
 
-    slice.forEach((cat, col) => {
-      const idx   = row * 3 + col;
-      const panel = document.createElement('div');
+    for (var col2 = 0; col2 < slice.length; col2++) {
+      var cat2  = slice[col2];
+      var idx2  = row * 3 + col2;
+      var panel = document.createElement('div');
       panel.className = 'product-panel';
-      panel.id        = 'panel-' + idx;
+      panel.id        = 'panel-' + idx2;
 
-      const items = cat.products.map(path => {
-        const name     = nameFromPath(path);
-        const safeSrc  = path.replace(/'/g, "\\'");
-        const safeName = name.replace(/'/g, "\\'");
-        const encSrc = encodePath(path);
-        const safeEncSrc = encSrc.replace(/'/g, "\\'");
-        return '<div class="product-card-sm" onclick="openLightbox(\'' + safeEncSrc + '\',\'' + safeName + '\')">' +
-          '<div class="product-img-wrap"><img src="' + encSrc + '" alt="' + name + '" onerror="this.parentElement.style.background=\'#e0d4c4\'"></div>' +
-          '<div class="product-name-sm">' + name + '</div>' +
-          '<div class="product-footer-sm"><button class="add-btn-sm" onclick="event.stopPropagation();addToCart()">В корзину</button></div>' +
-        '</div>';
-      }).join('');
+      var itemsHTML = '';
+      for (var k = 0; k < cat2.products.length; k++) {
+        var path     = cat2.products[k];
+        var name     = nameFromPath(path);
+        var encSrc   = encodePath(path);
+        var safeSrc  = encSrc.replace(/'/g, "\\'");
+        var safeName = name.replace(/'/g, "\\'");
+        itemsHTML +=
+          '<div class="product-card-sm" onclick="openLightbox(\'' + safeSrc + '\',\'' + safeName + '\')">' +
+            '<div class="product-img-wrap"><img src="' + encSrc + '" alt="' + name + '" onerror="this.parentElement.style.background=\'#e0d4c4\'"></div>' +
+            '<div class="product-name-sm">' + name + '</div>' +
+            '<div class="product-footer-sm"><button class="add-btn-sm" onclick="event.stopPropagation();addToCart()">В корзину</button></div>' +
+          '</div>';
+      }
 
-   
+      panel.innerHTML =
+        '<div class="panel-header">' +
+          '<div class="panel-title">' + cat2.name + '</div>' +
+          '<span class="panel-close" onclick="toggleCategory(' + idx2 + ')">Закрыть ✕</span>' +
+        '</div>' +
+        '<div class="panel-products">' + itemsHTML + '</div>';
+
+      grid.appendChild(panel);
+    }
+  }
+}
+
+build();
+</script>
+</body>
+</html>
