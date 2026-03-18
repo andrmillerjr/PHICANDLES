@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- email: r u t a s h a 2 8 0 9 at g m a i l dot c o m -->
 <title>PHICANDLES — Авторские свечи ручной работы</title>
 <meta name="description" content="Гармония, уют и экологичность в каждой детали. Авторские свечи ручной работы с доставкой по всей России.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
@@ -14,7 +15,6 @@
     --border: rgba(139,94,60,0.15);
   }
   body { font-family: 'Raleway', sans-serif; background: var(--warm-white); color: var(--dark); font-weight: 300; }
-
   nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2rem; border-bottom: 0.5px solid var(--border); background: var(--warm-white); position: sticky; top: 0; z-index: 100; gap: 1rem; }
   .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; letter-spacing: 0.12em; color: var(--dark); flex-shrink: 0; }
   .logo span { color: var(--gold); font-style: italic; }
@@ -23,7 +23,6 @@
   .nav-links a:hover { color: var(--gold); }
   .cart-btn { background: none; border: 0.5px solid var(--deep-amber); color: var(--deep-amber); padding: 0.5rem 1rem; font-family: 'Raleway', sans-serif; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: all 0.2s; white-space: nowrap; flex-shrink: 0; }
   .cart-btn:hover { background: var(--deep-amber); color: white; }
-
   .hero { position: relative; height: 45vh; overflow: hidden; display: flex; align-items: center; }
   .hero-bg { position: absolute; inset: 0; background-image: url('images/Классика/Обложка.jpg'); background-size: cover; background-position: center; background-color: #2A1F15; filter: blur(6px); transform: scale(1.05); }
   .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(28,22,18,0.78) 0%, rgba(28,22,18,0.35) 60%, rgba(28,22,18,0.1) 100%); }
@@ -34,18 +33,14 @@
   .hero-tagline { font-size: 1rem; color: rgba(245,239,228,0.75); font-style: italic; font-family: 'Cormorant Garamond', serif; margin-bottom: 2rem; letter-spacing: 0.04em; }
   .hero-cta { display: inline-block; background: var(--gold); color: var(--dark); padding: 0.95rem 2.4rem; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; cursor: pointer; border: none; font-family: 'Raleway', sans-serif; transition: opacity 0.2s; }
   .hero-cta:hover { opacity: 0.85; }
-
   .welcome-bar { background: var(--cream); padding: 2.5rem 3rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-bottom: 0.5px solid var(--border); }
   .welcome-text h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; margin-bottom: 0.4rem; }
   .welcome-text p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; max-width: 520px; }
-
   .strip { background: #2A1F15; color: var(--gold); text-align: center; padding: 0.9rem; font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; }
-
   .section { padding: 5rem 3rem; }
   .section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3rem; border-bottom: 0.5px solid var(--border); padding-bottom: 1rem; }
   .section-title { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 400; }
   .section-subtitle { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.06em; }
-
   .categories { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   .category-card { cursor: pointer; overflow: hidden; background: var(--cream); border: 0.5px solid var(--border); transition: border-color 0.25s; }
   .category-card.active { border-color: var(--gold); }
@@ -57,7 +52,6 @@
   .category-count { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
   .category-toggle { width: 28px; height: 28px; border: 0.5px solid var(--deep-amber); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.3s; color: var(--deep-amber); font-size: 1.2rem; }
   .category-card.active .category-toggle { background: var(--gold); border-color: var(--gold); color: var(--dark); transform: rotate(45deg); }
-
   .product-panel { display: none; grid-column: 1 / -1; background: var(--cream); border: 0.5px solid var(--gold); padding: 2.5rem; animation: fadeIn 0.3s ease; }
   .product-panel.open { display: block; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
@@ -66,7 +60,6 @@
   .panel-close { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); cursor: pointer; }
   .panel-close:hover { opacity: 0.7; }
   .panel-products { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.2rem; }
-
   .product-card-sm { cursor: pointer; transition: transform 0.2s; }
   .product-card-sm:hover { transform: translateY(-3px); }
   .product-img-wrap { aspect-ratio: 3/4; overflow: hidden; position: relative; background: #e8ddd0; margin-bottom: 0.7rem; }
@@ -76,19 +69,16 @@
   .product-footer-sm { display: flex; justify-content: flex-end; margin-top: 0.5rem; }
   .add-btn-sm { background: none; border: 0.5px solid var(--deep-amber); color: var(--deep-amber); font-size: 0.65rem; padding: 0.28rem 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'Raleway', sans-serif; cursor: pointer; transition: all 0.2s; }
   .add-btn-sm:hover { background: var(--deep-amber); color: white; }
-
   .features { background: #2A1F15; padding: 4rem 3rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
   .feature { text-align: center; }
   .feature-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
   .feature-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--cream); margin-bottom: 0.5rem; }
   .feature-text { font-size: 0.8rem; color: rgba(245,239,228,0.5); line-height: 1.7; }
-
   .contact-section { background: var(--cream); padding: 4rem 3rem; text-align: center; }
   .contact-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 400; margin-bottom: 0.8rem; }
   .contact-section p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; }
   .contact-email { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--deep-amber); text-decoration: none; border-bottom: 0.5px solid var(--deep-amber); padding-bottom: 2px; transition: opacity 0.2s; }
   .contact-email:hover { opacity: 0.7; }
-
   footer { background: #141009; color: rgba(245,239,228,0.5); padding: 3rem; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
   .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--cream); margin-bottom: 0.8rem; letter-spacing: 0.1em; }
   .footer-tagline { font-size: 0.8rem; line-height: 1.7; max-width: 220px; }
@@ -99,10 +89,8 @@
   .footer-links a:hover { color: var(--gold); }
   .footer-bottom { background: #0D0A06; padding: 1rem 3rem; display: flex; justify-content: space-between; align-items: center; }
   .footer-bottom p { font-size: 0.72rem; color: rgba(245,239,228,0.3); }
-
   .notification { position: fixed; bottom: 2rem; right: 2rem; background: var(--dark); color: var(--cream); padding: 0.9rem 1.4rem; font-size: 0.82rem; opacity: 0; transform: translateY(10px); transition: all 0.3s; z-index: 999; pointer-events: none; }
   .notification.show { opacity: 1; transform: translateY(0); }
-
   .lightbox { display: none; position: fixed; inset: 0; background: rgba(28,22,18,0.93); z-index: 500; align-items: center; justify-content: center; padding: 2rem; }
   .lightbox.open { display: flex; }
   .lightbox-inner { position: relative; max-width: 480px; width: 100%; }
@@ -112,7 +100,6 @@
   .lightbox-close:hover { opacity: 1; }
   .lightbox-order { margin-top: 1rem; display: inline-block; background: var(--gold); color: var(--dark); padding: 0.7rem 1.8rem; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; font-family: 'Raleway', sans-serif; cursor: pointer; border: none; transition: opacity 0.2s; }
   .lightbox-order:hover { opacity: 0.85; }
-
   @media (max-width: 1100px) { .panel-products { grid-template-columns: repeat(4, 1fr); } }
   @media (max-width: 900px) {
     .hero-title { font-size: 2.2rem; } .hero-content { padding: 0 2rem; }
@@ -127,18 +114,15 @@
 </style>
 </head>
 <body>
-
 <div class="notification" id="notif">Добавлено в корзину</div>
-
 <div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
   <div class="lightbox-inner">
-    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
     <img id="lb-img" src="" alt="">
     <div class="lightbox-name" id="lb-name"></div>
     <button class="lightbox-order" onclick="addToCart();closeLightbox()">Заказать</button>
   </div>
 </div>
-
 <nav>
   <div class="logo">PHI<span>CANDLES</span></div>
   <ul class="nav-links">
@@ -149,7 +133,6 @@
   </ul>
   <button class="cart-btn" id="cart-btn">Корзина (0)</button>
 </nav>
-
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
@@ -160,7 +143,6 @@
     <button class="hero-cta" onclick="document.getElementById('catalogue').scrollIntoView({behavior:'smooth'})">Смотреть каталог</button>
   </div>
 </section>
-
 <div class="welcome-bar" id="about">
   <div class="welcome-text">
     <h2>Приветствуем!</h2>
@@ -168,9 +150,7 @@
   </div>
   <button class="hero-cta" onclick="document.getElementById('catalogue').scrollIntoView({behavior:'smooth'})">Смотреть каталог</button>
 </div>
-
 <div class="strip">✦ Бесплатная доставка по всей России от 3 000 ₽ ✦ Подарочная упаковка в подарок ✦</div>
-
 <section class="section" id="catalogue">
   <div class="section-header">
     <h2 class="section-title">Каталог</h2>
@@ -178,19 +158,16 @@
   </div>
   <div class="categories" id="cat-grid"></div>
 </section>
-
 <div class="features">
-  <div class="feature"><span class="feature-icon">🕯️</span><div class="feature-title">Натуральный воск</div><p class="feature-text">Используем только кокосовый и соевый воск без синтетических добавок</p></div>
-  <div class="feature"><span class="feature-icon">🌿</span><div class="feature-title">Эко-ароматы</div><p class="feature-text">Натуральные эфирные масла и ботанические ингредиенты из России и мира</p></div>
-  <div class="feature"><span class="feature-icon">📦</span><div class="feature-title">Доставка по России</div><p class="feature-text">Отправляем в любой город России. Красивая подарочная упаковка в комплекте</p></div>
+  <div class="feature"><span class="feature-icon">&#x1F56F;</span><div class="feature-title">Натуральный воск</div><p class="feature-text">Используем только кокосовый и соевый воск без синтетических добавок</p></div>
+  <div class="feature"><span class="feature-icon">&#x1F33F;</span><div class="feature-title">Эко-ароматы</div><p class="feature-text">Натуральные эфирные масла и ботанические ингредиенты из России и мира</p></div>
+  <div class="feature"><span class="feature-icon">&#x1F4E6;</span><div class="feature-title">Доставка по России</div><p class="feature-text">Отправляем в любой город России. Красивая подарочная упаковка в комплекте</p></div>
 </div>
-
 <section class="contact-section" id="contact">
   <h2>Свяжитесь с нами</h2>
   <p>По всем вопросам заказа и сотрудничества пишите нам — ответим быстро!</p>
-  <a class="contact-email" href="/cdn-cgi/l/email-protection#d4a6a1a0b5a7bcb5e6ece4ed94b3b9b5bdb8fab7bbb9"><span class="__cf_email__" data-cfemail="f183848590829990c3c9c1c8b1969c90989ddf929e9c">[email&#160;protected]</span></a>
+  <a class="contact-email" id="contact-link"></a>
 </section>
-
 <footer>
   <div>
     <div class="footer-logo">PHICANDLES</div>
@@ -215,7 +192,7 @@
       <li><a href="#">ВКонтакте</a></li>
       <li><a href="#">Telegram</a></li>
       <li><a href="#">WhatsApp</a></li>
-      <li><a href="/cdn-cgi/l/email-protection#f082858491839891c2c8c0c9b0979d91999cde939f9d"><span class="__cf_email__" data-cfemail="5f2d2a2b3e2c373e6d676f661f38323e3633713c3032">[email&#160;protected]</span></a></li>
+      <li id="footer-email-li"></li>
     </ul>
   </div>
 </footer>
@@ -223,91 +200,21 @@
   <p>© 2025 PHICANDLES. Все права защищены.</p>
   <p>Политика конфиденциальности · Оферта</p>
 </div>
+<script>
+var EM = 'rutasha2809' + '@' + 'gmail.com';
+var el = document.getElementById('contact-link');
+el.href = 'mail' + 'to:' + EM;
+el.textContent = EM;
+var feli = document.getElementById('footer-email-li');
+feli.innerHTML = '<a href="mail' + 'to:' + EM + '" style="text-decoration:none;color:rgba(245,239,228,0.5);font-size:0.82rem;">' + EM + '</a>';
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var CATALOGUE = [
-  {
-    name: 'Анималистика',
-    cover: 'images/Анималистика/Обложка.jpg',
-    products: [
-      'images/Анималистика/Мишки-mini.jpg',
-      'images/Анималистика/Мишки.jpg',
-      'images/Анималистика/Собачки.jpg'
-    ]
-  },
-  {
-    name: 'Интерьер',
-    cover: 'images/Интерьер/Обложка.jpg',
-    products: [
-      'images/Интерьер/Аромолампа.jpg',
-      'images/Интерьер/Подставка 2.jpg',
-      'images/Интерьер/Подставка.jpg',
-      'images/Интерьер/Свеча бокс 2.jpg',
-      'images/Интерьер/Свеча бокс.jpg',
-      'images/Интерьер/Свеча в стекле.jpg',
-      'images/Интерьер/Свеча заливка цветы.jpg',
-      'images/Интерьер/Тыква.jpg'
-    ]
-  },
-  {
-    name: 'Классика',
-    cover: 'images/Классика/Обложка.jpg',
-    products: [
-      'images/Классика/Свеча 1.jpg',
-      'images/Классика/Свеча 2.jpg',
-      'images/Классика/Свеча 3.jpg',
-      'images/Классика/Свеча 4.jpg',
-      'images/Классика/Свеча 5.jpg',
-      'images/Классика/Свеча 6.jpg',
-      'images/Классика/Свеча 7.jpg',
-      'images/Классика/Свеча 8.jpg',
-      'images/Классика/Свеча 9.jpg',
-      'images/Классика/Свеча 10.jpg',
-      'images/Классика/Свечи mini.jpg',
-      'images/Классика/Свечи.jpg'
-    ]
-  },
-  {
-    name: 'Мэлтсы и саше',
-    cover: 'images/Мэлтсы и саше/Обложка.jpg',
-    products: [
-      'images/Мэлтсы и саше/Аромолампа.jpg',
-      'images/Мэлтсы и саше/Мэлтсы 1.jpg',
-      'images/Мэлтсы и саше/Мэлтсы 2.jpg',
-      'images/Мэлтсы и саше/Мэлтсы 3.jpg',
-      'images/Мэлтсы и саше/Мэлтсы.jpg',
-      'images/Мэлтсы и саше/Саше.jpg'
-    ]
-  },
-  {
-    name: 'Пасхальная коллекция',
-    cover: 'images/Пасхальная коллекция/Обложка.jpg',
-    products: [
-      'images/Пасхальная коллекция/Заяц1.jpg',
-      'images/Пасхальная коллекция/Заяц2.jpg',
-      'images/Пасхальная коллекция/Заяц3.jpg',
-      'images/Пасхальная коллекция/Заяц4.jpg',
-      'images/Пасхальная коллекция/Заяц5.jpg',
-      'images/Пасхальная коллекция/Яйца_гладкие.jpg',
-      'images/Пасхальная коллекция/Яйцо_ажур.jpg',
-      'images/Пасхальная коллекция/Яйцо_заливка.jpg'
-    ]
-  },
-  {
-    name: 'Цветы',
-    cover: 'images/Цветы/Обложка.jpg',
-    products: [
-      'images/Цветы/Букет розы mini.jpg',
-      'images/Цветы/Букет розы.jpg',
-      'images/Цветы/Лотус.jpg',
-      'images/Цветы/Пион mini.jpg',
-      'images/Цветы/Пион.jpg',
-      'images/Цветы/Пионы.jpg',
-      'images/Цветы/Подсвечник роза с заливкой свечи.jpg',
-      'images/Цветы/Подсвечник роза.jpg',
-      'images/Цветы/Подсвечник розы.jpg'
-    ]
-  }
+  { name: 'Анималистика', cover: 'images/Анималистика/Обложка.jpg', products: ['images/Анималистика/Мишки-mini.jpg','images/Анималистика/Мишки.jpg','images/Анималистика/Собачки.jpg'] },
+  { name: 'Интерьер', cover: 'images/Интерьер/Обложка.jpg', products: ['images/Интерьер/Аромолампа.jpg','images/Интерьер/Подставка 2.jpg','images/Интерьер/Подставка.jpg','images/Интерьер/Свеча бокс 2.jpg','images/Интерьер/Свеча бокс.jpg','images/Интерьер/Свеча в стекле.jpg','images/Интерьер/Свеча заливка цветы.jpg','images/Интерьер/Тыква.jpg'] },
+  { name: 'Классика', cover: 'images/Классика/Обложка.jpg', products: ['images/Классика/Свеча 1.jpg','images/Классика/Свеча 2.jpg','images/Классика/Свеча 3.jpg','images/Классика/Свеча 4.jpg','images/Классика/Свеча 5.jpg','images/Классика/Свеча 6.jpg','images/Классика/Свеча 7.jpg','images/Классика/Свеча 8.jpg','images/Классика/Свеча 9.jpg','images/Классика/Свеча 10.jpg','images/Классика/Свечи mini.jpg','images/Классика/Свечи.jpg'] },
+  { name: 'Мэлтсы и саше', cover: 'images/Мэлтсы и саше/Обложка.jpg', products: ['images/Мэлтсы и саше/Аромолампа.jpg','images/Мэлтсы и саше/Мэлтсы 1.jpg','images/Мэлтсы и саше/Мэлтсы 2.jpg','images/Мэлтсы и саше/Мэлтсы 3.jpg','images/Мэлтсы и саше/Мэлтсы.jpg','images/Мэлтсы и саше/Саше.jpg'] },
+  { name: 'Пасхальная коллекция', cover: 'images/Пасхальная коллекция/Обложка.jpg', products: ['images/Пасхальная коллекция/Заяц1.jpg','images/Пасхальная коллекция/Заяц2.jpg','images/Пасхальная коллекция/Заяц3.jpg','images/Пасхальная коллекция/Заяц4.jpg','images/Пасхальная коллекция/Заяц5.jpg','images/Пасхальная коллекция/Яйца_гладкие.jpg','images/Пасхальная коллекция/Яйцо_ажур.jpg','images/Пасхальная коллекция/Яйцо_заливка.jpg'] },
+  { name: 'Цветы', cover: 'images/Цветы/Обложка.jpg', products: ['images/Цветы/Букет розы mini.jpg','images/Цветы/Букет розы.jpg','images/Цветы/Лотус.jpg','images/Цветы/Пион mini.jpg','images/Цветы/Пион.jpg','images/Цветы/Пионы.jpg','images/Цветы/Подсвечник роза с заливкой свечи.jpg','images/Цветы/Подсвечник роза.jpg','images/Цветы/Подсвечник розы.jpg'] }
 ];
 
 var cartCount = 0;
@@ -349,14 +256,12 @@ function toggleCategory(idx) {
   var panel = document.getElementById('panel-' + idx);
   var card  = document.getElementById('card-'  + idx);
   var isOpen = panel.classList.contains('open');
-
   for (var i = 0; i < CATALOGUE.length; i++) {
     var p = document.getElementById('panel-' + i);
     var c = document.getElementById('card-'  + i);
     if (p) p.classList.remove('open');
     if (c) c.classList.remove('active');
   }
-
   if (!isOpen) {
     panel.classList.add('open');
     card.classList.add('active');
@@ -368,42 +273,29 @@ function build() {
   var grid        = document.getElementById('cat-grid');
   var footerLinks = document.getElementById('footer-links');
   var rows        = Math.ceil(CATALOGUE.length / 3);
-
   for (var row = 0; row < rows; row++) {
     var slice = CATALOGUE.slice(row * 3, row * 3 + 3);
-
     for (var col = 0; col < slice.length; col++) {
       var cat  = slice[col];
       var idx  = row * 3 + col;
       var card = document.createElement('div');
       card.className = 'category-card';
-      card.id        = 'card-' + idx;
+      card.id = 'card-' + idx;
       (function(i) { card.onclick = function() { toggleCategory(i); }; })(idx);
       card.innerHTML =
         '<img class="category-thumb" src="' + encodePath(cat.cover) + '" alt="' + cat.name + '" onerror="this.style.opacity=\'.2\'">' +
-        '<div class="category-info">' +
-          '<div>' +
-            '<div class="category-name">' + cat.name + '</div>' +
-            '<div class="category-count">' + cat.products.length + ' ' + plural(cat.products.length) + '</div>' +
-          '</div>' +
-          '<div class="category-toggle">+</div>' +
-        '</div>';
+        '<div class="category-info"><div><div class="category-name">' + cat.name + '</div><div class="category-count">' + cat.products.length + ' ' + plural(cat.products.length) + '</div></div><div class="category-toggle">+</div></div>';
       grid.appendChild(card);
-
       var li = document.createElement('li');
-      (function(i, name) {
-        li.innerHTML = '<a href="#catalogue" onclick="toggleCategory(' + i + ');return false;">' + name + '</a>';
-      })(idx, cat.name);
+      (function(i, name) { li.innerHTML = '<a href="#catalogue" onclick="toggleCategory(' + i + ');return false;">' + name + '</a>'; })(idx, cat.name);
       footerLinks.appendChild(li);
     }
-
     for (var col2 = 0; col2 < slice.length; col2++) {
       var cat2  = slice[col2];
       var idx2  = row * 3 + col2;
       var panel = document.createElement('div');
       panel.className = 'product-panel';
-      panel.id        = 'panel-' + idx2;
-
+      panel.id = 'panel-' + idx2;
       var itemsHTML = '';
       for (var k = 0; k < cat2.products.length; k++) {
         var path     = cat2.products[k];
@@ -411,12 +303,18 @@ function build() {
         var encSrc   = encodePath(path);
         var safeSrc  = encSrc.replace(/'/g, "\\'");
         var safeName = name.replace(/'/g, "\\'");
-        itemsHTML +=
-          '<div class="product-card-sm" onclick="openLightbox(\'' + safeSrc + '\',\'' + safeName + '\')">' +
-            '<div class="product-img-wrap"><img src="' + encSrc + '" alt="' + name + '" onerror="this.parentElement.style.background=\'#e0d4c4\'"></div>' +
-            '<div class="product-name-sm">' + name + '</div>' +
-            '<div class="product-footer-sm"><button class="add-btn-sm" onclick="event.stopPropagation();addToCart()">В корзину</button></div>' +
-          '</div>';
+        itemsHTML += '<div class="product-card-sm" onclick="openLightbox(\'' + safeSrc + '\',\'' + safeName + '\')">' +
+          '<div class="product-img-wrap"><img src="' + encSrc + '" alt="' + name + '" onerror="this.parentElement.style.background=\'#e0d4c4\'"></div>' +
+          '<div class="product-name-sm">' + name + '</div>' +
+          '<div class="product-footer-sm"><button class="add-btn-sm" onclick="event.stopPropagation();addToCart()">В корзину</button></div></div>';
       }
+      panel.innerHTML = '<div class="panel-header"><div class="panel-title">' + cat2.name + '</div><span class="panel-close" onclick="toggleCategory(' + idx2 + ')">Закрыть &#x2715;</span></div><div class="panel-products">' + itemsHTML + '</div>';
+      grid.appendChild(panel);
+    }
+  }
+}
 
-      p
+build();
+</script>
+</body>
+</html>
